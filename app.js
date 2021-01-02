@@ -97,7 +97,7 @@ function userLocation() {
     function getPosErr(err) {
         switch (err.code) {
             case err.PERMISSION_DENIED:
-                alert("User denied the request for Geolocation.");
+                alert("Enable location.");
 
                 break;
             case err.POSITION_UNAVAILABLE:
