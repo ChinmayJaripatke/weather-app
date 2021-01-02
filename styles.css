@@ -38,6 +38,7 @@ body{
 
 .temperature{
     flex-direction: column;
+    margin: 0.5px;
 }
 
 .temperature-description{
