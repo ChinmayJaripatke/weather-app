@@ -32,7 +32,7 @@ function showCityName() {
 
             const { name } = data.location;
             locationName.textContent = name;
-            trip.innerHTML = `<button type="button" class="btn btn-lg btn-success"><a href="https://www.makemytrip.com/hotels/${cityName}-hotels.html">Plan a trip to ${cityName} now!</a></button>`
+            trip.innerHTML = `<button type="button" class="btn-common mmt-btn"><a href="https://www.makemytrip.com/hotels/${cityName}-hotels.html">Plan a trip to ${cityName} now!</a></button>`
 
 
             const { icon } = data.current.condition;
