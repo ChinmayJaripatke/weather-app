@@ -2,8 +2,6 @@
 
 function showCityName() {
     cityName = document.getElementById("city").value;
-    console.log(cityName);
-
     // Selectors:
     let temperatureDegree = document.querySelector(".temperature-degree");
     let temperatureDescription = document.querySelector(".temperature-description");
@@ -34,7 +32,7 @@ function showCityName() {
 
             const { name } = data.location;
             locationName.textContent = name;
-            trip.innerHTML = `<button type="button" class="btn btn-lg btn-success"><a href="https://www.makemytrip.com/hotels/${cityName}-hotels.html">Plan a trip to ${cityName} now!</a></button>`
+            trip.innerHTML = `<button type="button" class="btn-common mmt-btn"><a href="https://www.makemytrip.com/hotels/${cityName}-hotels.html">Plan a trip to ${cityName} now!</a></button>`
 
 
             const { icon } = data.current.condition;
@@ -58,10 +56,9 @@ function userLocation() {
 
     // If the location is enabled we call 'getPosSuccess' and if it's not we call 'getPosErr':
     if (navigator.geolocation) {
-
         navigator.geolocation.getCurrentPosition(getPosSuccess, getPosErr);
     } else {
-        alert('Enable location!')
+        alert('Enable location!');
     }
 
 
@@ -71,8 +68,6 @@ function userLocation() {
         long = position.coords.longitude;
         lat = position.coords.latitude;
 
-
-        const proxy = `https://cors-anywhere.herokuapp.com/`;
         const api = `https://api.weatherapi.com/v1/current.json?key= 563ccb8dc2234ebca6e61510210101&q=${lat},${long}`;
 
         fetch(api)
@@ -80,7 +75,7 @@ function userLocation() {
                 return reponse.json();
             })
             .then(data => {
-                console.log(data);
+                // console.log(data);
 
                 const { temp_c } = data.current;
                 temperatureDegree.textContent = temp_c;
