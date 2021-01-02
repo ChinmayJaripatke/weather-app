@@ -5,6 +5,11 @@ body {
   font-family: "Dosis", sans-serif;
 }
 
+input:focus,
+button:focus {
+  outline: none;
+}
+
 .user-form {
   margin-top: 50px;
 }
@@ -20,10 +25,6 @@ body {
   font-size: 36px;
 }
 
-.user-form-input:focus {
-  outline: none;
-}
-
 .btn-common {
   margin-bottom: 12px;
   width: 200px;
@@ -31,6 +32,7 @@ body {
   border-radius: 10px;
   color: #000000;
   font-weight: 400px;
+  cursor: pointer;
 }
 
 .user-form-btn {
