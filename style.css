@@ -1,0 +1,29 @@
+body {
+  background-color: #fbf6f0;
+  text-align: center;
+  height: 100vh;
+  font-family: "Dosis", sans-serif;
+}
+
+.user-form {
+  margin-top: 50px;
+}
+
+.user-form-input {
+  font-weight: 500;
+  border: none;
+  border-bottom: 5px solid #ffa45b;
+  background: transparent;
+  width: 40%;
+  margin: 5px auto 25px auto;
+  padding: 5px 15px;
+  font-size: 36px;
+}
+
+.user-form-input:focus {
+  outline: none;
+}
+
+.user-form-btn {
+  margin-bottom: 12px;
+}

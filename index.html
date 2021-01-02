@@ -1,49 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Weather App</title>
-</head>
-<body>
-
-    <div class="user-city">
-        <form class="user-input">
-            <input class="form-control" id = "city" type="text" placeholder="Enter the city name">
-            <button type="button" class="btn btn-primary" onclick="showCityName(); return false;">Check Weather!</button>
-        </form>
+  </head>
+  <body>
+    <div>
+      <form class="user-form">
+        <input
+          class="user-form-input"
+          id="city"
+          type="text"
+          placeholder="Enter the city name"
+        />
+        <br />
+        <button
+          type="button"
+          class="btn btn-primary user-form-btn"
+          onclick="showCityName(); return false;"
+        >
+          Check Weather!
+        </button>
+      </form>
     </div>
-
+    <p>OR</p>
     <div class="user-location">
-        <button type="button" class="btn btn-dark" onclick="userLocation(); return false;">Use current location</button>
+      <button
+        type="button"
+        class="btn btn-dark"
+        onclick="userLocation(); return false;"
+      >
+        Use current location
+      </button>
     </div>
 
     <div class="location">
-        <h1 class="location-name"></h1>
-        <div class="weather-icon"><img src="" alt=""></div>
+      <h1 class="location-name"></h1>
+      <div class="weather-icon"><img src="" alt="" /></div>
     </div>
 
     <div class="temperature">
-        <div class="degree-section">
-            <h2 class="temperature-degree"></h2>
-            <span class="degree-celsius"></span>
-        </div>
-        <div class="temperature-description">
-           
-        </div>
+      <div class="degree-section">
+        <h2 class="temperature-degree"></h2>
+        <span class="degree-celsius"></span>
+      </div>
+      <div class="temperature-description"></div>
     </div>
 
-    <div class="trip">
-        
-    </div>
+    <div class="trip"></div>
 
     <div class="footer">
-        <p>Developed by <a href="https://www.linkedin.com/in/chinmay-jaripatke-244706153/">Chinmay Jaripatke</a></p>
+      <p>
+        Developed by
+        <a href="https://www.linkedin.com/in/chinmay-jaripatke-244706153/"
+          >Chinmay Jaripatke</a
+        >
+      </p>
     </div>
-        
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
