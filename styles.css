@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgb(127, 127, 206), rgb(38, 38, 184));
+    color: #FCF8E8;
+    font-family:sans-serif;
+}
+
+.form-control{
+    margin: 40px;
+    margin-left: 5px;
+    justify-content: center;
+}
+
+
+ .btn-primary{
+    margin: 10px;
+    margin-left: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.location, .temperature{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temperature{
+    flex-direction: column;
+}
+
+.temperature-description{
+    font-size: 20px;
+}
+
+.degree-section{
+    display: flex;
+    align-items: center;
+}
+
+.temperature-degree{
+    font-size: 35px;
+}
+
+.degree-section span{
+    font-size: 35px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.trip a{
+    color: white;
+}
+
+.btn-success{
+    margin: 30px;
+    margin-left: 50px;
+
+}
+
+
+
+.trip a:hover{
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+
+.footer{
+    padding-top: 170px;
+    display: flex;
+}
+
+.footer a{
+    color: white;
+    text-decoration: underline
+}
+
+.footer a:hover{
+    color: white;
+}
+
