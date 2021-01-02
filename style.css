@@ -22,7 +22,7 @@ button:focus {
   font-weight: 500;
   border: none;
   border-bottom: 5px solid #ffa45b;
-  background: transparent;
+  background: #fbf6f0;
   width: 50%;
   margin: 5px auto 35px auto;
   padding: 5px 15px;
