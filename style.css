@@ -14,8 +14,8 @@ body {
   border: none;
   border-bottom: 5px solid #ffa45b;
   background: transparent;
-  width: 40%;
-  margin: 5px auto 25px auto;
+  width: 50%;
+  margin: 5px auto 35px auto;
   padding: 5px 15px;
   font-size: 36px;
 }
@@ -24,6 +24,21 @@ body {
   outline: none;
 }
 
-.user-form-btn {
+.btn-common {
   margin-bottom: 12px;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  color: #000000;
+  font-weight: 400px;
+}
+
+.user-form-btn {
+  border: 1px solid #aee6e6;
+  background-color: #aee6e6;
+}
+
+.user-location-btn {
+  border: 1px solid #ffda77;
+  background-color: #ffda77;
 }
