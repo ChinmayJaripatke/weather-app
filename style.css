@@ -1,8 +1,12 @@
 body {
   background-color: #fbf6f0;
   text-align: center;
-  height: 100vh;
+  /* height: 100vh; */
   font-family: "Dosis", sans-serif;
+}
+
+.content {
+  height: 95vh;
 }
 
 input:focus,
@@ -76,13 +80,35 @@ button:focus {
   background-color: rgba(255, 164, 91, 0.3);
 }
 
-/* .footer {
-  position: relative;
+.footer {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  margin-top: 15px;
+  height: 5vh;
+  text-align: 20px;
 }
 
 .footer p {
-} */
+  text-align: center;
+}
 
 .footer a {
   text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .user-form-input {
+    width: 80%;
+    font-size: 18px;
+  }
+
+  .user-form {
+    margin-top: 25px;
+  }
+
+  .result {
+    margin-top: 25px;
+  }
 }

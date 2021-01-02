@@ -18,53 +18,56 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div>
-      <form class="user-form">
-        <input
-          class="user-form-input"
-          id="city"
-          type="text"
-          placeholder="Enter the city name"
-        />
-        <br />
+    <div class="content">
+      <div>
+        <form class="user-form">
+          <input
+            class="user-form-input"
+            id="city"
+            type="text"
+            placeholder="Enter the city name"
+          />
+          <br />
+          <button
+            type="button"
+            class="btn-common user-form-btn"
+            onclick="showCityName(); return false;"
+          >
+            Check Weather!
+          </button>
+        </form>
+      </div>
+      <p>OR</p>
+      <div class="user-location">
         <button
           type="button"
-          class="btn-common user-form-btn"
-          onclick="showCityName(); return false;"
+          class="btn-common user-location-btn"
+          onclick="userLocation(); return false;"
         >
-          Check Weather!
+          Use current location
         </button>
-      </form>
-    </div>
-    <p>OR</p>
-    <div class="user-location">
-      <button
-        type="button"
-        class="btn-common user-location-btn"
-        onclick="userLocation(); return false;"
-      >
-        Use current location
-      </button>
-    </div>
-
-    <div class="result">
-      <div class="location">
-        <h1 class="location-name"></h1>
-        <div class="weather-icon"><img src="" alt="" /></div>
       </div>
 
-      <div class="temperature">
-        <div class="degree-section">
-          <h2 class="temperature-degree"></h2>
-          <span class="degree-celsius"></span>
+      <div class="result">
+        <div class="location">
+          <h1 class="location-name"></h1>
+          <div class="weather-icon"><img src="" alt="" /></div>
         </div>
-        <div class="temperature-description"></div>
+
+        <div class="temperature">
+          <div class="degree-section">
+            <h2 class="temperature-degree"></h2>
+            <span class="degree-celsius"></span>
+          </div>
+          <div class="temperature-description"></div>
+        </div>
       </div>
+
+      <div class="trip"></div>
     </div>
-    <div class="trip"></div>
 
     <div class="footer">
-      <p class="footer">
+      <p>
         Developed by
         <a href="https://www.linkedin.com/in/chinmay-jaripatke-244706153/"
           >Chinmay Jaripatke</a
